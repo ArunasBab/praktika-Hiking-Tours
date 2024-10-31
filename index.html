@@ -29,6 +29,13 @@
   <body>
     <header>
       <h3>Hiking <span>Tours</span></h3>
+      <nav class="nav-header">
+        <a href="#header">Home</a>
+        <a href="#about">About</a>
+        <a href="#our">Services</a>
+        <a href="#featured">Featured</a>
+        <a href="#our-gallery">Gallery</a>
+      </nav>
       <div class="social" id="header">
         <a target="_blank" href="https://www.facebook.com/"
           ><i class="fa-brands fa-facebook"></i
@@ -52,50 +59,68 @@
       </section>
 
       <section class="about">
-        <h2 id="about">ABOUT <span>US</span></h2>
-        <img src="images/exploring_612x612.jpg" alt="Exploring" />
-        <h4>EXPLORE THE DIFFERENCE</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-          laboriosam libero modi nulla accusantium consequatur necessitatibus
-          suscipit nesciunt ipsa quisquam.
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-          laboriosam libero modi nulla accusantium consequatur necessitatibus
-          suscipit nesciunt ipsa quisquam.
-        </p>
-        <a class="more" href="#header">Read More</a>
-        <!-- <button class="more">Read More</button> -->
+        <div class="grid-item-1">
+          <h2 id="about">ABOUT <span>US</span></h2>
+        </div>
+        <div class="grid-item-2">
+          <img src="images/exploring_612x612.jpg" alt="Exploring" />
+        </div>
+        <div class="grid-item-3">
+          <h4>EXPLORE THE DIFFERENCE</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            laboriosam libero modi nulla accusantium consequatur necessitatibus
+            suscipit nesciunt ipsa quisquam.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            laboriosam libero modi nulla accusantium consequatur necessitatibus
+            suscipit nesciunt ipsa quisquam.
+          </p>
+          <a class="more" href="#header">Read More</a>
+        </div>
       </section>
 
       <section class="our">
         <h2 id="our">OUR <span>SERVICES</span></h2>
-        <div class="our-grid">
-          <div>
-            <i class="fa-solid fa-wallet"></i>
-            <h5>saving money</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
-              suscipit.
-            </p>
+        <div class="our-box">
+          <div class="our-item">
+            <div>
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div>
+              <h5>saving money</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
+                suscipit.
+              </p>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-tree"></i>
-            <h5>endless hiking</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
-              suscipit.
-            </p>
+          <div class="our-item">
+            <div>
+              <i class="fa-solid fa-tree"></i>
+            </div>
+            <div>
+              <h5>endless hiking</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
+                suscipit.
+              </p>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-socks"></i>
-            <h5>amazing comfort</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
-              suscipit.
-            </p>
+          <div class="our-item">
+            <div>
+              <i class="fa-solid fa-socks"></i>
+            </div>
+            <div>
+              <h5>amazing comfort</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
+                suscipit.
+              </p>
+            </div>
           </div>
+          <div></div>
         </div>
       </section>
 
@@ -223,7 +248,7 @@
       </section>
 
       <footer>
-        <nav>
+        <nav class="nav-footer">
           <a href="#header">Home</a>
           <a href="#about">About</a>
           <a href="#our">Services</a>

@@ -15,6 +15,8 @@ html {
   --grey: #f7fafb;
 }
 
+/* header */
+
 header {
   width: 100%;
   margin: auto;
@@ -45,9 +47,15 @@ header h3 span,
   color: var(--blue);
 }
 
+.nav-header {
+  display: none;
+}
+
 .social i:hover {
   color: var(--blue-light);
 }
+
+/* Continue exploring  */
 
 .continue {
   width: 100%;
@@ -77,6 +85,7 @@ p {
   background-color: var(--blue);
   border: 1px solid var(--blue);
   box-shadow: rgba(0, 0, 0, 0.04) 1px 1px 2px;
+  border-radius: 0.2rem;
   color: white;
   font-size: 0.6rem;
   font-weight: 300;
@@ -86,6 +95,8 @@ p {
 .inside:hover {
   background-color: var(--blue-dark);
 }
+
+/* About us  */
 
 .about {
   padding: 2rem;
@@ -120,36 +131,43 @@ h4 {
   border: none;
 }
 
+/* Our services  */
+
 .our {
   width: 100%;
   padding: 2rem 0 4rem 0;
   background-color: var(--grey);
 }
 
-.our-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.our-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.our-grid > div {
+.our-box > div {
+  width: 250px;
   text-align: center;
   padding: 1rem;
 }
 
-.our-grid div i {
+.our-box div i {
   background-color: var(--blue);
   padding: 0.5rem;
 }
 
-.our-grid div h5 {
+.our-box div h5 {
   text-transform: uppercase;
   margin: 0;
   padding: 0.7rem 0;
 }
 
-.our-grid div p {
+.our-box div p {
   margin: 0;
 }
+
+/* Featured tours */
 
 .featured {
   padding: 2rem;
@@ -213,6 +231,8 @@ h6 {
   font-size: 0.5rem;
   line-height: 0.7rem;
 }
+
+/* Our gallery  */
 
 .our-gallery {
   width: 100%;
@@ -286,6 +306,7 @@ h6 {
 }
 
 .want-grid {
+  height: 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0.5rem;
@@ -336,17 +357,19 @@ input::placeholder {
   font-size: 0.7rem;
 }
 
+/* footer  */
+
 footer {
   width: 100%;
   text-align: center;
   background-color: black;
 }
 
-footer nav {
+footer .nav-footer {
   padding-top: 2rem;
 }
 
-footer nav a {
+footer .nav-footer a {
   color: white;
   text-decoration: none;
   margin: 0.3rem;
@@ -354,7 +377,7 @@ footer nav a {
   transition: 0.5s;
 }
 
-footer nav a:hover {
+footer .nav-footer a:hover {
   color: var(--blue);
 }
 
@@ -369,4 +392,179 @@ footer nav a:hover {
 footer p {
   color: white;
   padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 756px) {
+  /* Continue exploring  */
+
+  .continue {
+    background-image: url(images/moutain.avif);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+  }
+
+  .continue h1 {
+    font-size: 5rem;
+    margin-top: 50px;
+  }
+
+  .continue p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .inside {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  /* Featured tours */
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .photo img {
+    height: 220px;
+  }
+
+  /* Our gallery  */
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem 0;
+  }
+
+  .gallery-grid div:nth-of-type(5) {
+    grid-column: span 2;
+  }
+
+  .container img {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .nav-header {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .nav-header a {
+    color: black;
+    text-decoration: none;
+    margin: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+
+  .nav-header a:hover {
+    color: var(--blue);
+  }
+
+  /* Continue exploring  */
+
+  .continue h1 {
+    margin-top: 80px;
+  }
+
+  /* About us  */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2.5rem;
+  }
+
+  .grid-item-1 {
+    grid-column: span 2;
+  }
+
+  .grid-item-3 {
+    align-content: center;
+  }
+
+  .about h4 {
+    font-size: 3rem;
+    padding: 0;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .more {
+    font-size: 1rem;
+  }
+
+  /* Our services  */
+
+  .our-box div:nth-of-type(4) {
+    display: none;
+  }
+
+  /* Our gallery  */
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-grid div:nth-of-type(5) {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* About us  */
+
+  .grid-item-2 {
+    position: relative;
+    top: -1.2rem;
+    left: -1rem;
+    border: 0.5rem solid var(--blue);
+    padding: 0;
+    width: 100%;
+  }
+
+  .grid-item-2 img {
+    position: relative;
+    top: 1.2rem;
+    left: 1rem;
+  }
+
+  /* Our services  */
+
+  .our-item {
+    display: flex;
+  }
+
+  .our-item div:nth-of-type(2) {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .our-box div h5 {
+    padding: 0;
+    padding-bottom: 0.7rem;
+  }
+
+  /* Featured tours */
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
 }

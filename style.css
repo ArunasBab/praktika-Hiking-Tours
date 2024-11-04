@@ -47,6 +47,11 @@ header h3 span,
   color: var(--blue);
 }
 
+header .social i,
+footer .social i {
+  font-size: 2rem;
+}
+
 .nav-header {
   display: none;
 }
@@ -112,7 +117,7 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h4 {
+h3 {
   letter-spacing: 1px;
   margin: 0;
   padding: 2rem 0 0 0;
@@ -333,17 +338,17 @@ h6 {
 }
 
 .email-input {
-  padding: 0px 2px;
+  padding: 10px 10px;
   width: 100%;
 }
 
 .submit-btn {
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   border: none;
   background-color: #eff0ee;
   position: absolute;
   top: 50%;
-  right: 2px;
+  right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
   transition: 0.5s;
@@ -354,7 +359,7 @@ h6 {
 }
 
 input::placeholder {
-  font-size: 0.7rem;
+  font-size: 1.3rem;
 }
 
 /* footer  */
